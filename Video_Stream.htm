@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <!-- saved from url=(0061)http://sites.bxmc.poly.edu/~spencercappiello/RT.fiberframe17/ -->
-<html style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html style="" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>RT Stream</title>
+    <title>IDM Show 2018 Video Stream</title>
     <meta name="description" content="this is the homepage">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- favicon -->
@@ -15,8 +18,12 @@
     <!-- Google Login -->
     <script src="./Video_Stream_files/api_client.js" gapi_processed="true"></script>
 
-    <!-- Spencer CSS -->
+    <!-- CSS files -->
     <link rel="stylesheet" href="./Video_Stream_files/main.css">
+    <link rel="stylesheet" href="./Video_Stream_files/colorbox.css">
+    <!-- Scripts -->
+    <script src="./Video_Stream_files/jquery-1.11.2.min.js"></script>
+    <script src="./Video_Stream_files/jquery.colorbox-min.js"></script>
 <style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; touch-action-delay: none; }
 body /shadow-deep/ [touch-action="none"]{ -ms-touch-action: none; touch-action: none; touch-action-delay: none; }
 [touch-action="auto"]{ -ms-touch-action: auto; touch-action: auto; touch-action-delay: none; }
@@ -44,73 +51,9 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
 .fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
 .fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
 .fb_customer_chat_bounce_in{animation-duration:250ms;animation-name:fb_bounce_in}.fb_customer_chat_bounce_out{animation-duration:250ms;animation-name:fb_fade_out}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_fade_out{from{opacity:1}to{opacity:0}}@keyframes fb_bounce_in{0%{opacity:0;transform:scale(.8, .8);transform-origin:100% 100%}10%{opacity:.1}20%{opacity:.2}30%{opacity:.3}40%{opacity:.4}50%{opacity:.5}60%{opacity:.6}70%{opacity:.7}80%{opacity:.8;transform:scale(1.03, 1.03)}90{opacity:.9}100%{opacity:1;transform:scale(1, 1)}}</style></head>
+
+
 <body>
-
-
-<!--<nav>
-    <header>
-        <div class="container-navicon icon-nav sb-toggle-left">
-            <span class="fa fa-navicon icon-header"></span> 
-        </div>
-        <div class="container-navicon-clouds icon-clouds-wide">
-            <img class="icon-clouds" src="./Video_Stream_files/white-clouds-opt.svg">
-        </div>
-        <div class="container-navicon icon-search">
-            <span class="fa fa-search icon-header"></span> 
-        </div>
-    </header>
-
-    <div class="container-search-page">
-        <div class="search-bar">
-            <input class="search-field" type="text" name="fname" placeholder=" search">
-            <div class="container-navicon icon-search-close">
-                <span class="fa fa-close icon-header"></span> 
-            </div>
-        </div>
-    </div>
-
-    <div class="container-clouds-button no-display">
-        <div class="container-cloud-triangle">
-            <div class="cloud-triangle"></div>
-        </div>
-        <div class="container-square">
-            <div class="cloud-button-back">
-                <a class="button-play">PLAY</a>
-                <div class="button-divider"></div>
-                <a class="button-create">CREATE</a>
-            </div>
-        </div>
-    </div>
-</nav> -->
-
-<div id="sidebar">
-    <div id="spacer02"></div>
-    <div class="option-button button-slate">
-         <div class="fa fa-user option-icon"></div>
-         <span class="option-button-name">slate</span>
-    </div>
-    <div class="sidemenu-divider"></div>
-    <div class="option-button button-bolts">
-         <div class="fa fa-bolt option-icon"></div>
-         <span class="option-button-name">bolts</span>
-    </div>
-    <div class="sidemenu-divider"></div>
-    <div class="option-button button-chats">
-         <div class="fa fa-comments option-icon"></div>
-         <span class="option-button-name">chats</span>
-    </div>
-    <div class="sidemenu-divider"></div>
-    <div class="option-button button-stream">
-         <div class="fa fa-road option-icon"></div>
-         <span class="option-button-name">stream</span>
-    </div>
-    <div class="sidemenu-divider"></div>
-    <div class="option-button button-settings">
-         <div class="fa fa-cog option-icon"></div>
-         <span class="option-button-name">settings</span>
-    </div>
-</div>
-
 
 
 <div class="body-site">
@@ -118,16 +61,21 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
    <div class="container-page play-page scale-1">
 
         <div class="project">
-            <a target="" href="">
+            <a class="gallery" href="https://drive.google.com/file/d/10HQFos0f09DCezH_SAkRAk5gGMrY5RMv/preview">
                 <img class="video-still" src="./Video_Stream_files/movie-still-1.jpg">
             </a>  
+            <script>
+      			jQuery('a.gallery').colorbox({iframe:true, innerWidth:640, innerHeight:480});
+    		</script>
             <p class="primary">Title</p>
             <p class="secondary">Creator Name(s)</p>
 
         </div>
 
+
+
         <div class="project">
-            <a target="" href="">
+            <a class="gallery" href="">
                 <img class="video-still" src="./Video_Stream_files/movie-still-2.jpg">
             </a>  
             <p class="primary">Title</p>
@@ -135,7 +83,7 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
         </div>
 
         <div class="project">
-            <a target="" href="">
+            <a class="gallery" href="">
                 <img class="video-still" src="./Video_Stream_files/movie-still-3.jpg">
             </a>
             <p class="primary">Title</p>
@@ -143,7 +91,7 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
         </div>
 
         <div class="project">
-            <a target="" href="">
+            <a class="gallery" href="">
                 <img class="video-still" src="./Video_Stream_files/movie-still-4.jpg">
             </a>
             <p class="primary">Title</p>
@@ -151,7 +99,7 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
         </div>
 
         <div class="project">
-            <a target="" href="">
+            <a class="gallery" href="">
                 <img class="video-still" src="./Video_Stream_files/movie-still-1.jpg">
             </a>
             <p class="primary">Title</p>
@@ -159,7 +107,7 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
         </div>
 
         <div class="project">
-            <a target="" href="">
+            <a class="gallery" href="">
                 <img class="video-still" src="./Video_Stream_files/movie-still-2.jpg">
             </a>
             <p class="primary">Title</p>
@@ -167,7 +115,7 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
         </div>
 
         <div class="project">
-            <a target="" href="">
+            <a class="gallery" href="">
                 <img class="video-still" src="./Video_Stream_files/movie-still-3.jpg">
             </a>
             <p class="primary">Title</p>
@@ -175,7 +123,7 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
         </div>
 
         <div class="project">
-            <a target="" href="">
+            <a class="gallery" href="">
                 <img class="video-still" src="./Video_Stream_files/movie-still-4.jpg">
             </a>
             <p class="primary">Title</p>
@@ -183,7 +131,7 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
         </div>
 
         <div class="project">
-            <a target="" href="">
+            <a class="gallery" href="">
                 <img class="video-still" src="./Video_Stream_files/movie-still-1.jpg">
             </a>
             <p class="primary">Title</p>
@@ -191,7 +139,7 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
         </div>
 
         <div class="project">
-            <a target="" href="">
+            <a class="gallery" href="">
                 <img class="video-still" src="./Video_Stream_files/movie-still-2.jpg">
             </a>
             <p class="primary">Title</p>
@@ -199,7 +147,7 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
         </div>
 
         <div class="project">
-            <a target="" href="">
+            <a class="gallery" href="">
                 <img class="video-still" src="./Video_Stream_files/movie-still-3.jpg">
             </a>
             <p class="primary">Title</p>
@@ -207,7 +155,7 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
         </div>
 
         <div class="project">
-            <a target="" href="">
+            <a class="gallery" href="">
                 <img class="video-still" src="./Video_Stream_files/movie-still-4.jpg">
             </a>
             <p class="primary">Title</p>
@@ -221,400 +169,6 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
 </div>
 
 
-    <div class="container-page slate-page no-display">
-
-        <div class="user-info-short">
-            <img class="profile-picture" src="./Video_Stream_files/sds.jpg">
-            <div class="bio">
-                 <h2>Sebastian DeSouza</h2>
-                <h3>London, UK</h3>
-                <h4>Actor, Writer, Enthusianst</h4>
-            </div>
-        </div>
-
-        <div class="container-tabs tabs">
-            <div class="tab tab-info">Info</div>
-            <div class="tab tab-projects tab-selected">Projects</div>
-            <div class="tab tab-photos">Photos</div>
-            <div class="tab tab-collabs">Collabs</div>
-        </div>
-            
-        <div class="page-info no-display">
-            <h1 class="page-header">About Me</h1>
-            <p>Sebastian's career as both writer and actor has been in full flight for over eight years. From iconoic Birtish dramas such as "skins" and "The Borgias" to movies ranging from "Plastic" to "Kids in Love". Seb is a compulsive writer and is dedicated to creating a platoform where everyone has equal access to the film industry.</p>
-            <br>
-
-            <h1 class="page-header">Education</h1>
-            <ul>
-              <li>St Edward's School (2006)</li>
-              <li>Brockhurst Preparatory School (2010)</li>
-            </ul>
-            <br>
-
-            <h1 class="page-header">Professional</h1>
-            TV<ul>
-              <li>The Truth About Crime</li>
-              <li>Skins</li>
-              <li>The Borgias</li>
-              <li>The Confession</li>
-              <li>Plastic</li>
-              <li>Recovery Road</li>
-            </ul>
-            Music<ul>
-              <li>Featured on Cubiq's Say EP</li>
-            </ul>
-        </div>
-
-        <div class="page-projects">            
-            <div class="container-tab-projects">
-                <h1 class="page-header-projects">Projects</h1>
-                <div class="tab-project">
-                    <img class="tab-project-thumbnail" src="./Video_Stream_files/movie-still-1.jpg">
-                    <h3>One Wave</h3>
-                </div>
-
-                <div class="tab-project">
-                    <img class="tab-project-thumbnail" src="./Video_Stream_files/movie-still-2.jpg">
-                    <h3>Another Way</h3>
-                </div>
-
-                <div class="tab-project">
-                    <img class="tab-project-thumbnail" src="./Video_Stream_files/movie-still-3.jpg">
-                    <h3>Flutter Away</h3>
-                </div>
-
-                <div class="tab-project">
-                    <img class="tab-project-thumbnail" src="./Video_Stream_files/movie-still-4.jpg">
-                    <h3>The Kiss</h3>
-                </div>
-
-                <div class="tab-project">
-                    <img class="tab-project-thumbnail" src="./Video_Stream_files/movie-still-5.jpg">
-                    <h3>A Long Road</h3>
-                </div>
-            </div>
-        </div>
-
-        <div class="page-photos no-display">            
-            <div class="container-tab-photos">
-                <h1 class="page-header-photos">Photos</h1>
-                <img class="user-images" src="./Video_Stream_files/1.jpg">
-                <img class="user-images" src="./Video_Stream_files/2.jpg">
-                <img class="user-images" src="./Video_Stream_files/3.jpg">
-                <img class="user-images" src="./Video_Stream_files/4.jpg">
-                <img class="user-images" src="./Video_Stream_files/5.jpg">
-                <img class="user-images" src="./Video_Stream_files/6.jpg">
-                <img class="user-images" src="./Video_Stream_files/7.jpg">
-                <img class="user-images" src="./Video_Stream_files/8.jpg">
-                <img class="user-images" src="./Video_Stream_files/9.jpg">
-                <img class="user-images" src="./Video_Stream_files/10.jpg">
-                <img class="user-images" src="./Video_Stream_files/11.jpg">
-                <img class="user-images" src="./Video_Stream_files/12.jpg">
-                
-                <span class="fa fa-plus-circle fa-4x"></span>
-            </div>
-        </div>
-
-        <div class="page-collabs no-display">            
-            <div class="container-tab-collabs">
-                <h1 class="page-header-collabs">Collabs</h1>
-                <img class="collab-image" src="./Video_Stream_files/1(1).jpg">
-                <img class="collab-image" src="./Video_Stream_files/2(1).jpg">
-                <img class="collab-image" src="./Video_Stream_files/3(1).jpg">
-                <img class="collab-image" src="./Video_Stream_files/4(1).jpg">
-                <img class="collab-image" src="./Video_Stream_files/5(1).jpg">
-                <img class="collab-image" src="./Video_Stream_files/6(1).jpg">
-                <img class="collab-image" src="./Video_Stream_files/7(1).jpg">
-                <img class="collab-image" src="./Video_Stream_files/8(1).jpg">
-                <img class="collab-image" src="./Video_Stream_files/9(1).jpg">
-                <img class="collab-image" src="./Video_Stream_files/10(1).jpg">
-                <img class="collab-image" src="./Video_Stream_files/11(1).jpg">
-                <img class="collab-image" src="./Video_Stream_files/12(1).jpg">
-            </div>
-        </div>
-    </div>
-
-    <div class="container-page bolts-page no-display">
-        <div class="container-page-bolts">
-            <div class="bolts-header">bolts</div>
-            <div class="container-bolt">
-                <div class="bolt-container-words">
-                    <div class="bolt-title">One Wave</div>
-                    <div class="bolt-creator">Alfred Whipper</div>
-                </div>
-                <img class="bolt-thumb" src="./Video_Stream_files/movie-still-1.jpg">
-            </div>
-
-            <div class="container-bolt odd">
-                <div class="bolt-container-words">
-                    <div class="bolt-title">Another Way</div>
-                    <div class="bolt-creator">Madeline Garringer</div>
-                </div>
-                <img class="bolt-thumb" src="./Video_Stream_files/movie-still-2.jpg">
-            </div>
-
-            <div class="container-bolt">
-                <div class="bolt-container-words">
-                    <div class="bolt-title">Flutter Away</div>
-                    <div class="bolt-creator">Josephine Carper</div>
-                </div>
-                <img class="bolt-thumb" src="./Video_Stream_files/movie-still-3.jpg">
-            </div>
-
-            <div class="container-bolt odd">
-                <div class="bolt-container-words">
-                    <div class="bolt-title">The Kiss</div>
-                    <div class="bolt-creator">Veronica Fischer</div>
-                </div>
-                <img class="bolt-thumb" src="./Video_Stream_files/movie-still-4.jpg">
-            </div>
-
-            <div class="container-bolt">
-                <div class="bolt-container-words">
-                    <div class="bolt-title">One Wave</div>
-                    <div class="bolt-creator">Alfred Whipper</div>
-                </div>
-                <img class="bolt-thumb" src="./Video_Stream_files/movie-still-1.jpg">
-            </div>
-
-            <div class="container-bolt odd">
-                <div class="bolt-container-words">
-                    <div class="bolt-title">Another Way</div>
-                    <div class="bolt-creator">Madeline Garringer</div>
-                </div>
-                <img class="bolt-thumb" src="./Video_Stream_files/movie-still-2.jpg">
-            </div>
-
-            <div class="container-bolt">
-                <div class="bolt-container-words">
-                    <div class="bolt-title">Flutter Away</div>
-                    <div class="bolt-creator">Josephine Carper</div>
-                </div>
-                <img class="bolt-thumb" src="./Video_Stream_files/movie-still-3.jpg">
-            </div>
-
-            <div class="container-bolt odd">
-                <div class="bolt-container-words">
-                    <div class="bolt-title">The Kiss</div>
-                    <div class="bolt-creator">Veronica Fischer</div>
-                </div>
-                <img class="bolt-thumb" src="./Video_Stream_files/movie-still-4.jpg">
-            </div>
-
-            <div class="container-bolt">
-                <div class="bolt-container-words">
-                    <div class="bolt-title">One Wave</div>
-                    <div class="bolt-creator">Alfred Whipper</div>
-                </div>
-                <img class="bolt-thumb" src="./Video_Stream_files/movie-still-1.jpg">
-            </div>
-
-            <div class="container-bolt odd">
-                <div class="bolt-container-words">
-                    <div class="bolt-title">Another Way</div>
-                    <div class="bolt-creator">Madeline Garringer</div>
-                </div>
-                <img class="bolt-thumb" src="./Video_Stream_files/movie-still-2.jpg">
-            </div>
-
-            <div class="container-bolt">
-                <div class="bolt-container-words">
-                    <div class="bolt-title">Flutter Away</div>
-                    <div class="bolt-creator">Josephine Carper</div>
-                </div>
-                <img class="bolt-thumb" src="./Video_Stream_files/movie-still-3.jpg">
-            </div>
-
-            <div class="container-bolt odd">
-                <div class="bolt-container-words">
-                    <div class="bolt-title">The Kiss</div>
-                    <div class="bolt-creator">Veronica Fischer</div>
-                </div>
-                <img class="bolt-thumb" src="./Video_Stream_files/movie-still-4.jpg">
-            </div>
-
-        </div>
-    </div>
-
-    <div class="container-page chats-page no-display">
-        <div class="container-page-chats">
-            <div class="chat-header">chats</div>
-            <div class="chat">
-                <div class="chat-words">
-                    <div class="chat-name">Spencer Cappiello</div>
-                    <div class="chat-last-message">  what time do you want to meet up?</div>
-                </div>
-                <div class="chat-date">monday</div>
-                <img class="chat-photo" src="./Video_Stream_files/spence.jpg">
-            </div>
-
-            <div class="chat odd">
-                <div class="chat-words">
-                    <div class="chat-name">Rebecca Gerdy</div>
-                    <div class="chat-last-message">  Very nice to meet you this weekend...</div>
-                </div>
-                <div class="chat-date">sunday</div>
-                <img class="chat-photo" src="./Video_Stream_files/1(1).jpg">
-            </div>
-
-            <div class="chat">
-                <div class="chat-words">
-                    <div class="chat-name">Sati Mills</div>
-                    <div class="chat-last-message">  can you give me some more details on the script?</div>
-                </div>
-                <div class="chat-date">friday</div>
-                <img class="chat-photo" src="./Video_Stream_files/2(1).jpg">
-            </div>
-
-            <div class="chat odd">
-                <div class="chat-words">
-                    <div class="chat-name">George Walker</div>
-                    <div class="chat-last-message">  No problem, consider it done.</div>
-                </div>
-                <div class="chat-date">thursday</div>
-                <img class="chat-photo" src="./Video_Stream_files/3(1).jpg">
-            </div>
-
-            <div class="chat">
-                <div class="chat-words">
-                    <div class="chat-name">Veronica Leeroy</div>
-                    <div class="chat-last-message">  helloo??</div>
-                </div>
-                <div class="chat-date">tuesday</div>
-                <img class="chat-photo" src="./Video_Stream_files/4(1).jpg">
-            </div>
-
-            <div class="chat odd">
-                <div class="chat-words">
-                    <div class="chat-name">Heather Maple</div>
-                    <div class="chat-last-message">  I can't wait to shoot this weekend!</div>
-                </div>
-                <div class="chat-date">tuesday</div>
-                <img class="chat-photo" src="./Video_Stream_files/5(1).jpg">
-            </div>
-
-            <div class="chat">
-                <div class="chat-words">
-                    <div class="chat-name">Timothy Kim</div>
-                    <div class="chat-last-message">  Something like that would probably take a week</div>
-                </div>
-                <div class="chat-date">friday</div>
-                <img class="chat-photo" src="./Video_Stream_files/6(1).jpg">
-            </div>
-
-            <div class="chat odd">
-                <div class="chat-words">
-                    <div class="chat-name">Robert Keffin</div>
-                    <div class="chat-last-message">  Some call me... Rudy</div>
-                </div>
-                <div class="chat-date">thursday</div>
-                <img class="chat-photo" src="./Video_Stream_files/7(1).jpg">
-            </div>
-
-            <div class="chat">
-                <div class="chat-words">
-                    <div class="chat-name">Spencer Cappiello</div>
-                    <div class="chat-last-message">  what time do you want to meet up?</div>
-                </div>
-                <div class="chat-date">monday</div>
-                <img class="chat-photo" src="./Video_Stream_files/spence.jpg">
-            </div>
-
-            <div class="chat odd">
-                <div class="chat-words">
-                    <div class="chat-name">Rebecca Gerdy</div>
-                    <div class="chat-last-message">  Very nice to meet you this weekend...</div>
-                </div>
-                <div class="chat-date">sunday</div>
-                <img class="chat-photo" src="./Video_Stream_files/1(1).jpg">
-            </div>
-
-            <div class="chat">
-                <div class="chat-words">
-                    <div class="chat-name">Sati Mills</div>
-                    <div class="chat-last-message">  can you give me some more details on the script?</div>
-                </div>
-                <div class="chat-date">friday</div>
-                <img class="chat-photo" src="./Video_Stream_files/2(1).jpg">
-            </div>
-
-            <div class="chat odd">
-                <div class="chat-words">
-                    <div class="chat-name">George Walker</div>
-                    <div class="chat-last-message">  No problem, consider it done.</div>
-                </div>
-                <div class="chat-date">thursday</div>
-                <img class="chat-photo" src="./Video_Stream_files/3(1).jpg">
-            </div>
-
-            <div class="chat">
-                <div class="chat-words">
-                    <div class="chat-name">Veronica Leeroy</div>
-                    <div class="chat-last-message">  helloo??</div>
-                </div>
-                <div class="chat-date">tuesday</div>
-                <img class="chat-photo" src="./Video_Stream_files/4(1).jpg">
-            </div>
-
-            <div class="chat odd">
-                <div class="chat-words">
-                    <div class="chat-name">Heather Maple</div>
-                    <div class="chat-last-message">  I can't wait to shoot this weekend!</div>
-                </div>
-                <div class="chat-date">tuesday</div>
-                <img class="chat-photo" src="./Video_Stream_files/5(1).jpg">
-            </div>
-
-            <div class="chat">
-                <div class="chat-words">
-                    <div class="chat-name">Timothy Kim</div>
-                    <div class="chat-last-message">  Something like that would probably take a week</div>
-                </div>
-                <div class="chat-date">friday</div>
-                <img class="chat-photo" src="./Video_Stream_files/6(1).jpg">
-            </div>
-
-            <div class="chat odd">
-                <div class="chat-words">
-                    <div class="chat-name">Robert Keffin</div>
-                    <div class="chat-last-message">  Some call me... Rudy</div>
-                </div>
-                <div class="chat-date">thursday</div>
-                <img class="chat-photo" src="./Video_Stream_files/7(1).jpg">
-            </div>
-        
-        </div>
-    </div>
-
-    <div class="container-page settings-page no-display">
-        <div class="container-page-settings">
-            <div class="settings-header">settings</div> 
-            <div class="container-settings">
-                <div class="settings-general"><span class="fa fa-wrench"></span>&nbsp;General</div>
-                <div class="settings-security"><span class="fa fa-key"></span>&nbsp;Security</div>
-                <div class="settings-privacy"><span class="fa fa-lock"></span>&nbsp;Privacy</div>
-                <div class="settings-advanced"><span class="fa fa-cogs"></span>&nbsp; Advanced</div>
-            </div>
-        </div>
-    </div>
-    
-
-
-
-    <div class="container-login-page no-display">
-        <div class="container-login-window">
-            <h3 class="login-header">Login</h3>
-            <div class="login facebook">Login with Facebook</div>
-            <div id="customBtn" class="login google customGPlusSignIn">Login with Google</div>
-
-            <div id="status">(login status)</div>
-        
-            <div class="logout">Log out</div>
-        </div>
-    </div>
-
-
-</div>
     <!-- SCRIPTS -->
     <script src="./Video_Stream_files/jquery-1.11.2.min.js"></script>
     <script src="./Video_Stream_files/facebook-login.js"></script>
@@ -627,4 +181,5 @@ body /shadow-deep/ [touch-action="pan-x pan-y"],body /shadow-deep/ [touch-action
     <script src="./Video_Stream_files/color-thief.js"></script>
     <script src="./Video_Stream_files/main.js"></script>
 
-<iframe aria-hidden="true" id="ssIFrame_google" sandbox="allow-scripts allow-same-origin" src="./Video_Stream_files/iframe.html" style="position: absolute; width: 1px; height: 1px; left: -9999px; display: none;"></iframe><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Video_Stream_files/FdM1l_dpErI.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Video_Stream_files/FdM1l_dpErI(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="f11129c1077473" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./Video_Stream_files/ping.html" style="display: none;"></iframe></div></div></div></body></html>
+<iframe aria-hidden="true" id="ssIFrame_google" sandbox="allow-scripts allow-same-origin" src="./Video_Stream_files/iframe.html" style="position: absolute; width: 1px; height: 1px; left: -9999px; display: none;"></iframe>
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Video_Stream_files/FdM1l_dpErI.html" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Video_Stream_files/FdM1l_dpErI(1).html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="f11129c1077473" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./Video_Stream_files/ping.html" style="display: none;"></iframe></div></div></div></body></html>
